@@ -11,7 +11,7 @@ import DOMPurify from "isomorphic-dompurify";
 const contentHTML = ref<string>("");
 const yoast = ref<any>({});
 const { data } = await useFetch<any[]>(
-  "https://uw99mys.com/wp-json/wp/v2/pages?slug=homepage"
+  "https://api.uw99mys.com/wp-json/wp/v2/pages?slug=homepage"
 );
 if (data.value && data.value.length) {
   const { content, yoast_head_json } = data.value[0];
