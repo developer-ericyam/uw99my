@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+:root {
+  --ui-bg: #fff;
+  --ui-text: #404654;
+}
+
+body {
+  font-size: 12px;
+  font-family: "Galano-Medium", "krungthep", sans-serif;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 0 !important;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ol,
+ul {
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  padding: 0;
+}

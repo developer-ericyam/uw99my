@@ -1,0 +1,224 @@
+#theme-menu {
+  border: 0px solid red;
+  width: 64%;
+  margin: auto;
+  float: left;
+  padding: 32px 0 0;
+  text-align: center;
+  width: 71%;
+
+  #cssmenu {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0;
+    width: fit-content;
+
+    #menu-line {
+      bottom: -101px;
+      margin: 0 5px;
+      position: absolute;
+      height: 4px;
+      background: #d2b79c;
+      -webkit-transition: all 0.25s ease-out;
+      -moz-transition: all 0.25s ease-out;
+      -ms-transition: all 0.25s ease-out;
+      -o-transition: all 0.25s ease-out;
+      transition: all 0.25s ease-out;
+    }
+
+    #menu-button {
+      display: none;
+    }
+  }
+
+  .clearboth {
+    clear: both;
+  }
+}
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#cssmenu > ul > li {
+  font-weight: 600;
+}
+
+#cssmenu > ul > li {
+  margin: 0px 7px 0 7.6px;
+  height: 72px;
+  font-weight: normal;
+}
+
+#cssmenu > ul > li {
+  display: inline-block;
+  transition: 0.2s;
+  border-radius: 10px;
+}
+
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li.active > a {
+  background: linear-gradient(to right, #c2a884 40%, #e9d6c1 100%);
+  font-size: 13px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  font-weight: normal;
+  margin-bottom: 0;
+  border: 0px solid red;
+  height: 40%;
+  border-radius: 13px;
+}
+
+#cssmenu > ul > li > a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #404654;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+#cssmenu > ul > li > a {
+  padding: 5px 2px !important;
+  color: #404654;
+  font-size: 13px !important;
+  font-weight: unset;
+}
+
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+// Submenu style
+#cssmenu ul li.has-sub ul li:hover {
+  border-bottom: 0px solid red;
+  background: linear-gradient(180deg, #dee4f6, hsla(0, 0%, 100%, 0.6));
+  background-size: 100% 100%;
+  border-radius: 0px;
+}
+
+#cssmenu ul li.has-sub ul li img {
+  width: 146px;
+  margin: auto;
+}
+
+#cssmenu ul li.has-sub ul li .cPopup,
+#cssmenu ul li.has-sub ul li #cPp {
+  width: 110px;
+  height: 42px;
+  margin-top: 10px;
+  background: url(~/assets/images/menu/primary-medium-new-selected.png) center center
+    no-repeat;
+  background-size: 100%;
+  color: #fff;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+#cssmenu ul li.has-sub ul li h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #636363;
+  line-height: 16px;
+}
+
+#cssmenu ul ul li a {
+  float: unset;
+  position: relative;
+}
+
+#cssmenu ul ul li {
+  height: 0;
+  text-transform: uppercase;
+  float: none;
+  vertical-align: middle;
+  /* left: -219px; */
+  display: inline-block;
+  -webkit-transition: height 0.2s ease;
+  -moz-transition: height 0.2s ease;
+  -ms-transition: height 0.2s ease;
+  -o-transition: height 0.2s ease;
+  transition: height 0.2s ease;
+}
+
+#cssmenu ul li:hover > ul > li {
+  height: auto;
+}
+
+#cssmenu ul li.has-sub ul li {
+  border-bottom: 0px solid transparent;
+  transition: border 0.4s;
+  padding: 15px 0;
+  border: 0px solid red;
+  width: 200px;
+  text-align: center;
+  margin-left: -4px;
+}
+
+#cssmenu ul li.has-sub ul li:first-child {
+  pointer-events: unset;
+  float: unset;
+  margin-left: unset;
+}
+
+#cssmenu li:hover > ul {
+  height: 300px;
+  transition: 0.3s;
+  padding: 0px 0 0 0;
+  transition: 0.5s;
+}
+
+#cssmenu li:hover > ul {
+  padding: 0px 0 0 0;
+}
+
+#cssmenu ul ul {
+  position: absolute;
+  top: 123px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: inline;
+  width: 100%;
+  box-shadow: 0 6px 19px 0 hsl(0deg 0% 40% / 27%);
+  background-color: hsla(0, 0%, 100%, 0.96);
+  height: 0;
+  overflow: hidden;
+  text-align: center;
+  z-index: 9;
+}
+
+#cssmenu ul ul {
+  top: 104px;
+  width: 100vw;
+}
