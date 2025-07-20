@@ -16,8 +16,11 @@
     <div id="theme-menu">
       <div id="cssmenu" class="cmsmenu">
         <div id="menu-line" style="width: 46px; left: 226.195px" />
-        <div id="menu-button">Menu</div>
-        <ul>
+        <div id="menu-button" @click="showMenu = !showMenu">
+          Menu
+          <Icon class="icon" name="prime:bars" size="26" />
+        </div>
+        <ul :class="{ show: showMenu }">
           <li class="active">
             <NuxtLink to="/">{{ t("pageHome") }}</NuxtLink>
           </li>
@@ -301,6 +304,7 @@
 
 <script setup lang="ts">
 const { t } = useI18n();
+const showMenu = ref(false);
 </script>
 
 <style scoped lang="scss">

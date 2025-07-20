@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "~/assets/css/global.scss",
     "~/assets/css/menu.scss",
     "~/assets/css/footer.scss",
+    "~/assets/css/mobile.scss",
   ],
 
   modules: [

@@ -1,0 +1,231 @@
+@media (max-width: 768px),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px),
+  only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px),
+  only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px),
+  only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px),
+  only screen and (min-resolution: 192dpi) and (max-width: 1024px),
+  only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  .topBox {
+    padding-left: 25px !important;
+    #nowtime {
+      text-align: center;
+    }
+  }
+
+  .bannerAction a {
+    font-size: 16px !important;
+    &:before {
+      width: 172px !important;
+      height: 67px !important;
+    }
+  }
+
+  #theme-header-link a,
+  #theme-header-link a:visited {
+    color: #d4b7a4 !important;
+  }
+
+  #theme-header-link,
+  .container,
+  .footerBox,
+  .topBox,
+  .headerBox,
+  .slideBar,
+  .txtMarquee-left,
+  .noticeBox .w,
+  .nrBox,
+  .ElectronicsgameList,
+  .titleCell h2::before,
+  .serviceList dl dt,
+  .promos ul li,
+  #cssmenu {
+    width: 100% !important;
+  }
+
+  #cssmenu #menu-button {
+    background: #efefef !important;
+    color: #d3b7a4 !important;
+    display: block !important;
+    padding: 6px 20px 5px 20px !important;
+    border-top: 1px solid #fff !important;
+    cursor: pointer !important;
+    font-size: 15px !important;
+    text-transform: uppercase !important;
+    position: relative !important;
+
+    .icon {
+      position: absolute !important;
+      right: 20px !important;
+      color: #d3b7a4 !important;
+      top: 5px !important;
+    }
+  }
+
+  .gameBox,
+  .appDown,
+  .serviceBox {
+    margin-top: 50px !important;
+  }
+
+  #logo {
+    width: 50% !important;
+    margin: auto !important;
+    float: unset !important;
+    overflow: hidden !important;
+
+    .movie {
+      top: 62px !important;
+      width: 24% !important;
+      position: absolute !important;
+      right: -248px !important;
+    }
+  }
+
+  #theme-menu {
+    width: 100% !important;
+    border-bottom: 1px solid #fff7ef !important;
+    border-top: 1px solid #fff7ef !important;
+    padding-top: 0 !important;
+  }
+
+  #cssmenu ul {
+    width: 100% !important;
+    display: none;
+
+    li {
+      margin: 0 !important;
+      height: 50px !important;
+      padding-top: 13px !important;
+      float: none !important;
+      display: block !important;
+      border-top: 1px solid rgba(120, 120, 120, 0.15) !important;
+
+      &.active a,
+      &:hover a {
+        height: 30px !important;
+        color: #fff !important;
+      }
+
+      &.has-sub ul {
+        display: none !important;
+      }
+    }
+
+    &.show {
+      display: block !important;
+    }
+  }
+
+  #top-log {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 5px 0 !important;
+    background: #efefef !important;
+
+    .loginBox {
+      justify-content: center;
+    }
+  }
+
+  .sponBar,
+  .serviceList {
+    text-align: center;
+    ul {
+      display: unset !important;
+      li {
+        display: inline-block !important;
+        margin: 10px 14px !important;
+        width: 42% !important;
+        height: 186px !important;
+      }
+    }
+  }
+
+  .button-more {
+    width: 42% !important;
+  }
+
+  .serviceTxt {
+    text-align: left;
+  }
+
+  .gameChose li {
+    width: 45% !important;
+    margin: 10px 5px !important;
+  }
+
+  .choseBar {
+    position: relative !important;
+    display: flex !important;
+    height: 910px !important;
+    box-sizing: border-box !important;
+    z-index: 1 !important;
+    margin-top: 50px !important;
+    border: 0px solid red !important;
+    overflow: hidden !important;
+    .choseBox {
+      display: inline-block !important;
+      position: absolute !important;
+      width: 100% !important;
+      height: 100% !important;
+
+      .uw88_home_tab {
+        width: 100% !important;
+        top: 0 !important;
+      }
+
+      .gameTxt {
+        width: 100% !important;
+        text-align: center !important;
+
+        .tagList {
+          position: unset !important;
+          ul {
+            display: unset !important;
+            li {
+              margin-right: 0 !important;
+              cursor: pointer !important;
+              display: inline-block !important;
+              vertical-align: top !important;
+              width: 23% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .seo {
+    margin-left: 0 !important;
+  }
+
+  .footer {
+    padding: 25px !important;
+
+    .footerLink {
+      height: unset !important;
+      ul {
+        display: unset !important;
+        li {
+          display: inline-block !important;
+          width: 24% !important;
+        }
+      }
+    }
+
+    .footerTxt {
+      padding: 0 !important;
+      display: unset !important;
+      .footcol:not(:last-child) {
+        border-right: 0px solid #b79478 !important;
+        border-bottom: 1px solid #b79478 !important;
+      }
+
+      .footcol {
+        display: inline-block !important;
+        width: 100% !important;
+        padding: 20px !important;
+      }
+    }
+  }
+}
