@@ -18,6 +18,7 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
     "@nuxtjs/i18n",
     "@nuxtjs/sitemap",
+    '@vee-validate/nuxt',
   ],
 
   i18n: {
@@ -27,5 +28,10 @@ export default defineNuxtConfig({
       { code: "cn", name: "Chinese", file: "cn.json" },
       { code: "id", name: "Malaysia", file: "id.json" },
     ],
+  },
+  app: {
+    head: {
+      link: [{ rel: "icon", type: "image/x-icon", href: "/ficon_322.png" }],
+    },
   },
 });

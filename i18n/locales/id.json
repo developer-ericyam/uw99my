@@ -32,5 +32,9 @@
   "min": "Jumlah minimum",
   "max": "Jumlah maksimum",
   "mins": "Bayaran pantas dalam beberapa minit",
-  "unlimited": "Tidak terhad"
+  "unlimited": "Tidak terhad",
+  "userLogin": "Log Masuk",
+  "username": "User ID",
+  "password": "Kata Sandi",
+  "skipForNow": "Langkau buat masa ini"
 }

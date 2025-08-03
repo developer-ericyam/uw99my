@@ -32,5 +32,9 @@
   "min": "min",
   "max": "max",
   "mins": "mins",
-  "unlimited": "unlimited"
+  "unlimited": "unlimited",
+  "userLogin": "User Login",
+  "username": "Username",
+  "password": "Password",
+  "skipForNow": "Skip for now"
 }

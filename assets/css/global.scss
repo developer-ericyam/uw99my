@@ -37,3 +37,35 @@
   font-size: 14px;
   text-align: center;
 }
+
+form#customform,
+form#registerform {
+  margin-top: 15px;
+  padding: 30px 18px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(155, 153, 151, 0.5);
+  position: relative;
+}
+
+input#customform_submit,
+input#registerform_btnSubmit {
+  position: absolute;
+  bottom: -73px;
+  width: 160px;
+  height: 75px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  font-size: 16px;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: url(~/assets/images/menu/primary-medium-new-selected.png) center
+    17px no-repeat;
+  background-size: 100%;
+  border: 0px solid;
+  right: unset;
+  left: 35%;
+}

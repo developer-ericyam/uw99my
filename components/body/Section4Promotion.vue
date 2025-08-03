@@ -15,7 +15,9 @@
         <li><img src="~/assets/images/promotion/2.0Slot8001.jpg" /></li>
         <li><img src="~/assets/images/promotion/10800243-1.png" /></li>
       </ul>
-      <div class="button-more"><a href="#">View More</a></div>
+      <div class="button-more">
+        <NuxtLinkLocale to="/promotion">View More</NuxtLinkLocale>
+      </div>
     </div>
   </div>
 </template>

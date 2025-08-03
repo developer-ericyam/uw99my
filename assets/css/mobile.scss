@@ -229,3 +229,52 @@
     }
   }
 }
+
+// Login page
+@media (max-width: 768px),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px),
+  only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px),
+  only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px),
+  only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px),
+  only screen and (min-resolution: 192dpi) and (max-width: 1024px),
+  only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  .flexBar {
+    display: unset !important;
+  }
+
+  .sportBetMy {
+    .flexLeft {
+      left: 0 !important;
+      height: 400px !important;
+      width: 100% !important;
+      overflow: hidden !important;
+    }
+
+    .flexRight {
+      padding: 0 !important;
+      height: 350px !important;
+      width: 100% !important;
+    }
+  }
+
+  .tiyuImgs > img {
+    width: 100% !important;
+  }
+
+  form#customform,
+  form#registerform {
+    margin: auto !important;
+  }
+
+  #theme-content {
+    padding-bottom: 400px !important;
+  }
+
+  h3.golden {
+    text-align: center;
+  }
+
+  .gymChose {
+    text-align: center;
+  }
+}

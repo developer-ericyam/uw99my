@@ -21,56 +21,59 @@
           <Icon class="icon" name="prime:bars" size="26" />
         </div>
         <ul :class="{ show: showMenu }">
-          <li class="active">
-            <NuxtLink to="/">{{ t("pageHome") }}</NuxtLink>
+          <li :class="{ active: route.path === localePath('/') }">
+            <NuxtLinkLocale to="/">{{ t("pageHome") }}</NuxtLinkLocale>
           </li>
-          <li class="has-sub">
-            <NuxtLink to="#">{{ t("pageCasino") }}</NuxtLink>
+          <li
+            class="has-sub"
+            :class="{ active: route.path === localePath('/casino') }"
+          >
+            <NuxtLinkLocale to="/casino">{{ t("pageCasino") }}</NuxtLinkLocale>
             <ul>
               <li>
-                <a href="/en/casino" target="_self"
-                  ><h3>855 CROWN</h3>
+                <NuxtLinkLocale to="/casino">
+                  <h3>855 CROWN</h3>
                   <div class="cPopup">{{ t("playNow") }}</div>
                   <img
                     src="~/assets/images/menu/1_casino/uw88_menu_casino_005.png"
-                /></a>
+                /></NuxtLinkLocale>
               </li>
               <li>
-                <a href="/en/casino" target="_self"
-                  ><h3>DREAM GAMING</h3>
+                <NuxtLinkLocale to="/casino">
+                  <h3>DREAM GAMING</h3>
                   <div class="cPopup">{{ t("playNow") }}</div>
                   <img
                     src="~/assets/images/menu/1_casino/uw88_menu_casino_006.png"
-                /></a>
+                /></NuxtLinkLocale>
               </li>
               <li>
-                <a href="/en/casino" target="_self"
-                  ><h3>SA GAMING</h3>
+                <NuxtLinkLocale to="/casino">
+                  <h3>SA GAMING</h3>
                   <div class="cPopup">{{ t("playNow") }}</div>
                   <img
                     src="~/assets/images/menu/1_casino/uw88_menu_casino_001.png"
-                /></a>
+                /></NuxtLinkLocale>
               </li>
               <li>
-                <a href="/en/casino" target="_self"
-                  ><h3>WM CASINO</h3>
+                <NuxtLinkLocale to="/casino">
+                  <h3>WM CASINO</h3>
                   <div class="cPopup">{{ t("playNow") }}</div>
                   <img
                     src="~/assets/images/menu/1_casino/uw88_menu_casino_002.png"
-                /></a>
+                /></NuxtLinkLocale>
               </li>
               <li>
-                <a href="/en/casino" target="_self"
-                  ><h3>XPG GAMINNG</h3>
+                <NuxtLinkLocale to="/casino">
+                  <h3>XPG GAMINNG</h3>
                   <div class="cPopup">{{ t("playNow") }}</div>
                   <img
                     src="~/assets/images/menu/1_casino/uw88_menu_casino_004.png"
-                /></a>
+                /></NuxtLinkLocale>
               </li>
             </ul>
           </li>
           <li class="has-sub">
-            <NuxtLink to="#">{{ t("pageSports") }}</NuxtLink>
+            <NuxtLinkLocale to="#">{{ t("pageSports") }}</NuxtLinkLocale>
             <ul>
               <li class="">
                 <a href="/en/sportsbook" target="_self"
@@ -130,7 +133,7 @@
             </ul>
           </li>
           <li class="has-sub">
-            <NuxtLink to="#">{{ t("pagePoker") }}</NuxtLink>
+            <NuxtLinkLocale to="#">{{ t("pagePoker") }}</NuxtLinkLocale>
             <ul>
               <li class="">
                 <a href="/en/POKER" target="_self"
@@ -179,7 +182,7 @@
             </ul>
           </li>
           <li class="has-sub">
-            <NuxtLink to="#">{{ t("pageLottery") }}</NuxtLink>
+            <NuxtLinkLocale to="#">{{ t("pageLottery") }}</NuxtLinkLocale>
             <ul>
               <li class="">
                 <a href="/en/lottery" target="_self"
@@ -228,7 +231,7 @@
             </ul>
           </li>
           <li class="has-sub">
-            <NuxtLink to="#">{{ t("pageSlot") }}</NuxtLink>
+            <NuxtLinkLocale to="#">{{ t("pageSlot") }}</NuxtLinkLocale>
             <ul>
               <li class="">
                 <a href="/en/slot" target="_self"
@@ -267,17 +270,21 @@
               </li>
             </ul>
           </li>
-          <li>
-            <NuxtLink to="#">{{ t("pagePromotion") }}</NuxtLink>
+          <li :class="{ active: route.path === localePath('/promotion') }">
+            <NuxtLinkLocale to="/promotion">
+              {{ t("pagePromotion") }}
+            </NuxtLinkLocale>
           </li>
           <li>
-            <NuxtLink to="#">{{ t("pageJackpot") }}</NuxtLink>
+            <NuxtLinkLocale to="https://uw99ranking.com/jackpot/jackpot.aspx">
+              {{ t("pageJackpot") }}
+            </NuxtLinkLocale>
           </li>
-          <li>
-            <NuxtLink to="#">{{ t("pageVIP") }}</NuxtLink>
+          <li :class="{ active: route.path === localePath('/vip') }">
+            <NuxtLinkLocale to="/vip">{{ t("pageVIP") }}</NuxtLinkLocale>
           </li>
-          <li>
-            <NuxtLink to="#">{{ t("pageRedeem") }}</NuxtLink>
+          <li :class="{ active: route.path === localePath('/redeem') }">
+            <NuxtLinkLocale to="/redeem">{{ t("pageRedeem") }}</NuxtLinkLocale>
           </li>
         </ul>
       </div>
@@ -286,11 +293,16 @@
     <div id="top-log">
       <div class="loginBox">
         <div class="userIcon">
-          <img src="~/assets/images//uw88_login_icon_new.png" />
+          <img src="~/assets/images/uw88_login_icon_new.png" />
         </div>
         <div class="userBtn">
-          <a href="/en/login">{{ t("login") }}</a
-          ><span>/</span><a href="/en/registration">{{ t("register") }}</a>
+          <NuxtLinkLocale to="/login">
+            {{ t("login") }}
+          </NuxtLinkLocale>
+          <span>/</span>
+          <NuxtLinkLocale to="/registration">
+            {{ t("register") }}
+          </NuxtLinkLocale>
         </div>
       </div>
 
@@ -304,6 +316,9 @@
 
 <script setup lang="ts">
 const { t } = useI18n();
+const route = useRoute();
+const localePath = useLocalePath();
+
 const showMenu = ref(false);
 </script>
 

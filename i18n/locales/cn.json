@@ -32,5 +32,9 @@
   "min": "最低金额",
   "max": "最高金额",
   "mins": "分钟快速到账",
-  "unlimited": "无限制"
+  "unlimited": "无限制",
+  "userLogin": "会员登入",
+  "username": "用户账号",
+  "password": "密码",
+  "skipForNow": "暂时跳过"
 }
