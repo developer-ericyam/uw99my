@@ -36,5 +36,14 @@
   "userLogin": "User Login",
   "username": "Username",
   "password": "Password",
-  "skipForNow": "Skip for now"
+  "skipForNow": "Skip for now",
+  "userRegister": "Register",
+  "cPassword": "Confirm Password",
+  "fullName": "Full Name",
+  "withdrawalMsg": "Real Name for withdrawals verify",
+  "selectCurrency": "Select a Currency",
+  "phoneNo": "Mobile Number",
+  "promotionCode": "Affiliate Code",
+  "verifyCode": "VerifyCode",
+  "registerNow": "Register Now"
 }

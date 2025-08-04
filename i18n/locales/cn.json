@@ -36,5 +36,14 @@
   "userLogin": "会员登入",
   "username": "用户账号",
   "password": "密码",
-  "skipForNow": "暂时跳过"
+  "skipForNow": "暂时跳过",
+  "userRegister": "用户注册",
+  "cPassword": "确认密码",
+  "fullName": "全名",
+  "withdrawalMsg": "请输入全名作为提款验证",
+  "selectCurrency": "选择货币",
+  "phoneNo": "电话号码",
+  "promotionCode": "介绍码",
+  "verifyCode": "验证码",
+  "registerNow": "立即注册"
 }

@@ -36,5 +36,14 @@
   "userLogin": "Log Masuk",
   "username": "User ID",
   "password": "Kata Sandi",
-  "skipForNow": "Langkau buat masa ini"
+  "skipForNow": "Langkau buat masa ini",
+  "userRegister": "Daftar",
+  "cPassword": "Konfirmasi Kata Sandi",
+  "fullName": "Nama Lengkap",
+  "withdrawalMsg": "Nama Lengkap sesuai dengan bank",
+  "selectCurrency": "Pilih Mata uang",
+  "phoneNo": "Nomor Whatsapp or Nomor HP",
+  "promotionCode": "Affiliate Code - Kosongkan Jika Tidak Ada",
+  "verifyCode": "Kode Verifikasi",
+  "registerNow": "Daftar sekarang"
 }

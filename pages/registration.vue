@@ -29,7 +29,7 @@
                 >
                   <div class="gymTxtbar" bis_skin_checked="1">
                     <div class="gymChose active" bis_skin_checked="1">
-                      <h3 class="golden">REGISTER</h3>
+                      <h3 class="golden">{{ t("userRegister") }}</h3>
 
                       <div class="newregister" bis_skin_checked="1">
                         <form
@@ -38,29 +38,6 @@
                           method="POST"
                           @submit="onSubmitHandler"
                         >
-                          <input
-                            id="registerform_lang"
-                            name="lang"
-                            value="en-us"
-                            type="hidden"
-                          />
-                          <input
-                            id="registerform_Com"
-                            name="Com"
-                            value="UW88MY"
-                            type="hidden"
-                          />
-                          <input
-                            id="registerform_CustomDomain"
-                            name="CustomDomain"
-                            value="0"
-                            type="hidden"
-                          /><input
-                            id="registerform_IsMobile"
-                            type="hidden"
-                            name="IsMobile"
-                            value="false"
-                          />
                           <dl id="groupUsername">
                             <dt>Username :</dt>
                             <dd>
@@ -71,7 +48,7 @@
                                 class="trimVal alphanumeric"
                                 type="text"
                                 name="UserName"
-                                placeholder="Username"
+                                :placeholder="t('username')"
                                 pattern=".{5,15}"
                                 maxlength="15"
                                 required
@@ -95,7 +72,7 @@
                                 class="Password trimVal alphapwd"
                                 type="password"
                                 name="Password"
-                                placeholder="Password"
+                                :placeholder="t('password')"
                                 pattern=".{8,25}"
                                 maxlength="25"
                                 title="Use 8 or more characters with a mix of letters, numbers &amp; symbols"
@@ -119,7 +96,7 @@
                                 class="CPassword trimVal alphapwd"
                                 type="password"
                                 name="CPassword"
-                                placeholder="Confirm Password"
+                                :placeholder="t('cPassword')"
                                 pattern=".{8,25}"
                                 maxlength="25"
                                 required
@@ -140,7 +117,7 @@
                                 v-bind="fullNameProps"
                                 type="text"
                                 name="FullName"
-                                placeholder="Full Name"
+                                :placeholder="t('fullName')"
                                 pattern=".{1,}"
                                 title="Use 5 to 15 characters for Fullname"
                                 required
@@ -150,7 +127,7 @@
                                 class="small"
                                 bis_skin_checked="1"
                               >
-                                Real Name for withdrawals verify
+                                {{ t("withdrawalMsg") }}
                               </div>
                               <div
                                 id="registerform_FullNameMsg"
@@ -171,7 +148,7 @@
                                 class="selCurrencyCountryCode"
                               >
                                 <option value="">
-                                  -- Select a Currency --
+                                  -- {{ t("selectCurrency") }} --
                                 </option>
                                 <option value="MYR">MYR</option>
                                 <option value="SGD">SGD</option>
@@ -189,7 +166,7 @@
                                 class="numbers"
                                 type="text"
                                 name="Mobile"
-                                placeholder="Mobile Number"
+                                :placeholder="t('phoneNo')"
                                 minlength="8"
                               />
                             </dd>
@@ -203,7 +180,7 @@
                                 v-bind="promotionCodeProps"
                                 type="text"
                                 name="PromotionCode"
-                                placeholder="Affiliate Code"
+                                :placeholder="t('promotionCode')"
                               />
                             </dd>
                           </dl>
@@ -217,7 +194,7 @@
                                 class="numbers"
                                 type="text"
                                 name="VarifyCode"
-                                placeholder="VerifyCode"
+                                :placeholder="t('verifyCode')"
                                 pattern=".{4,4}"
                                 title="Key In 4 number for Verify Code"
                                 required
@@ -236,7 +213,7 @@
                               <input
                                 id="registerform_btnSubmit"
                                 type="submit"
-                                value="Register Now"
+                                :value="t('registerNow')"
                               />
                             </dd>
                           </dl>
@@ -255,7 +232,8 @@
 </template>
 
 <script setup lang="ts">
-// const { t } = useI18n();
+const { t } = useI18n();
+const route = useRoute();
 const { defineField, handleSubmit } = useForm({
   initialValues: {
     username: null,
@@ -264,7 +242,7 @@ const { defineField, handleSubmit } = useForm({
     fullName: null,
     currency: "",
     mobile: null,
-    promotionCode: null,
+    promotionCode: route.params.id || null,
     varifyCode: null,
   },
 });
@@ -299,7 +277,7 @@ const onSubmitHandler = handleSubmit(async (values) => {
       onClickCaptcha(); // Refresh captcha on error
     }
   } catch (err) {
-    console.log(err)
+    console.log(err);
     alert("An error occurred while register.");
     onClickCaptcha(); // Refresh captcha on error
   }
