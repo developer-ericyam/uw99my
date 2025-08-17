@@ -72,11 +72,18 @@
               </li>
             </ul>
           </li>
-          <li class="has-sub">
-            <NuxtLinkLocale to="#">{{ t("pageSports") }}</NuxtLinkLocale>
+          <li
+            class="has-sub"
+            :class="{
+              active: route.path === localePath('/sport-betting-malaysia'),
+            }"
+          >
+            <NuxtLinkLocale to="/sport-betting-malaysia">
+              {{ t("pageSports") }}
+            </NuxtLinkLocale>
             <ul>
               <li class="">
-                <a href="/en/sportsbook" target="_self"
+                <a href="#" target="_self"
                   ><img
                     src="~/assets/images/menu/2_sports/uw88_menu_sport_002.png"
                   />
@@ -87,7 +94,7 @@
                 >
               </li>
               <li class="">
-                <a href="/en/sportsbook" target="_self"
+                <a href="#" target="_self"
                   ><img
                     src="~/assets/images/menu/2_sports/uw88_menu_sport_001.png"
                   />
@@ -98,7 +105,7 @@
                 >
               </li>
               <li class="">
-                <a href="/en/sportsbook" target="_self"
+                <a href="#" target="_self"
                   ><img
                     src="~/assets/images/menu/2_sports/uw88_menu_sport_003.png"
                   />
@@ -109,7 +116,7 @@
                 >
               </li>
               <li class="">
-                <a href="/en/sportsbook" target="_self"
+                <a href="#" target="_self"
                   ><img
                     src="~/assets/images/menu/2_sports/uw88_menu_sport_004.png"
                   />
@@ -120,7 +127,7 @@
                 >
               </li>
               <li class="">
-                <a href="/en/sportsbook" target="_self"
+                <a href="#" target="_self"
                   ><img
                     src="~/assets/images/menu/2_sports/uw88_menu_sport_005.png"
                   />
@@ -132,11 +139,14 @@
               </li>
             </ul>
           </li>
-          <li class="has-sub">
-            <NuxtLinkLocale to="#">{{ t("pagePoker") }}</NuxtLinkLocale>
+          <li
+            class="has-sub"
+            :class="{ active: route.path === localePath('/poker') }"
+          >
+            <NuxtLinkLocale to="/poker">{{ t("pagePoker") }}</NuxtLinkLocale>
             <ul>
               <li class="">
-                <a href="/en/POKER" target="_self"
+                <a href="#" target="_self"
                   ><img
                     src="~/assets/images/menu/3_poker/uw88_menu_poker_004.png"
                   />
@@ -147,7 +157,7 @@
                 >
               </li>
               <li class="">
-                <a href="/en/POKER" target="_self"
+                <a href="#" target="_self"
                   ><img
                     src="~/assets/images/menu/3_poker/uw88_menu_poker_003.png"
                   />
@@ -158,7 +168,7 @@
                 >
               </li>
               <li class="">
-                <a href="/en/POKER" target="_self"
+                <a href="#" target="_self"
                   ><img
                     src="~/assets/images/menu/3_poker/uw88_menu_poker_002.png"
                   />
@@ -169,7 +179,7 @@
                 >
               </li>
               <li class="">
-                <a href="/en/POKER" target="_self"
+                <a href="#" target="_self"
                   ><img
                     src="~/assets/images/menu/3_poker/uw88_menu_poker_001.png"
                   />
@@ -181,8 +191,13 @@
               </li>
             </ul>
           </li>
-          <li class="has-sub">
-            <NuxtLinkLocale to="#">{{ t("pageLottery") }}</NuxtLinkLocale>
+          <li
+            class="has-sub"
+            :class="{ active: route.path === localePath('/ilottery') }"
+          >
+            <NuxtLinkLocale to="/ilottery">
+              {{ t("pageLottery") }}
+            </NuxtLinkLocale>
             <ul>
               <li class="">
                 <a href="/en/lottery" target="_self"
@@ -230,8 +245,15 @@
               </li>
             </ul>
           </li>
-          <li class="has-sub">
-            <NuxtLinkLocale to="#">{{ t("pageSlot") }}</NuxtLinkLocale>
+          <li
+            class="has-sub"
+            :class="{
+              active: route.path === localePath('/slot-games-machines-free'),
+            }"
+          >
+            <NuxtLinkLocale to="/slot-games-machines-free">
+              {{ t("pageSlot") }}
+            </NuxtLinkLocale>
             <ul>
               <li class="">
                 <a href="/en/slot" target="_self"
@@ -276,15 +298,28 @@
             </NuxtLinkLocale>
           </li>
           <li>
-            <NuxtLinkLocale to="https://uw99ranking.com/jackpot/jackpot.aspx">
+            <NuxtLinkLocale
+              to="https://uw99ranking.com/jackpot/jackpot.aspx"
+              target="_blank"
+            >
               {{ t("pageJackpot") }}
             </NuxtLinkLocale>
           </li>
           <li :class="{ active: route.path === localePath('/vip') }">
-            <NuxtLinkLocale to="/vip">{{ t("pageVIP") }}</NuxtLinkLocale>
+            <NuxtLinkLocale
+              :to="`https://uw99my.com/${locale}/vip`"
+              target="_blank"
+            >
+              {{ t("pageVIP") }}
+            </NuxtLinkLocale>
           </li>
           <li :class="{ active: route.path === localePath('/redeem') }">
-            <NuxtLinkLocale to="/redeem">{{ t("pageRedeem") }}</NuxtLinkLocale>
+            <NuxtLinkLocale
+              to="https://uw99my.com/index.php?view=prod&sort=DATE&lang=en&p=1"
+              target="_blank"
+            >
+              {{ t("pageRedeem") }}
+            </NuxtLinkLocale>
           </li>
         </ul>
       </div>
@@ -315,7 +350,7 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n();
+const { t, locale } = useI18n();
 const route = useRoute();
 const localePath = useLocalePath();
 
