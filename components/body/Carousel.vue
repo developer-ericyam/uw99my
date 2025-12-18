@@ -4,15 +4,17 @@
       <img :src="item" width="100%" height="auto" class="rounded-lg" />
     </UCarousel>
     <div class="bannerAction">
-      <a href="/en/registration">REGISTER NOW</a>
+      <a href="/en/registration/803975">REGISTER NOW</a>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 const items = [
-  "/images/carousel/carousel_1.jpg",
-  "/images/carousel/carousel_2.webp",
+  "/images/carousel/uw99wcasno.jpg",
+  "/images/carousel/uw-promo-home-en-1.webp",
+  "/images/carousel/uw-promo-home-en-2.webp",
+  "/images/carousel/uw-promo-home-en-3.webp",
 ];
 </script>
 

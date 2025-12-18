@@ -28,6 +28,7 @@ export default defineNuxtConfig({
       { code: "cn", name: "Chinese", file: "cn.json" },
       { code: "id", name: "Malaysia", file: "id.json" },
     ],
+    strategy: "prefix",
   },
   app: {
     head: {

@@ -335,7 +335,7 @@
             {{ t("login") }}
           </NuxtLinkLocale>
           <span>/</span>
-          <NuxtLinkLocale to="/registration">
+          <NuxtLinkLocale to="/registration/803975">
             {{ t("register") }}
           </NuxtLinkLocale>
         </div>
